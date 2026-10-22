@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>USD to EUR Currency Converter</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Currency Converter</h1>
+
+        <p>Convert US Dollars to Euros</p>
+
+        <label for="usdAmount">Amount in USD ($)</label>
+
+        <input
+            type="number"
+            id="usdAmount"
+            value="100"
+            min="0"
+            step="any"
+            placeholder="Enter amount in USD"
+        >
+
+        <button id="convertButton" onclick="convertCurrency()">
+            Convert to EUR
+        </button>
+
+        <div class="result" aria-live="polite">
+            <p>Converted Amount</p>
+
+            <h2 id="eurResult">€0.00</h2>
+
+            <div class="rate" id="exchangeRate">
+                Loading exchange rate...
+            </div>
+
+            <div class="message" id="message"></div>
+        </div>
+
+    </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
